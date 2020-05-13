@@ -1,0 +1,63 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Editar Perfil</mat-card-title>
+    <mat-card-subtitle>Complete seu perfil</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Company (disabled)</mat-label>
+        <input matInput disabled value="Google">
+      </mat-form-field>
+
+      <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width">
+              <mat-label>Primeiro Nome</mat-label>
+              <input matInput>
+            </mat-form-field></td>
+          <td><mat-form-field class="example-full-width">
+              <mat-label>Sobrenome</mat-label>
+              <input matInput>
+            </mat-form-field></td>
+        </tr></table>
+
+      <p>
+        <mat-form-field class="example-full-width">
+          <mat-label>Endereço</mat-label>
+          <textarea matInput placeholder="Ex. Avenida Rio Verde"></textarea>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Endereço 2</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+      </p>
+
+      <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width">
+              <mat-label>Cidade</mat-label>
+              <input matInput placeholder="Ex. Goiânia">
+            </mat-form-field></td>
+          <td><mat-form-field class="example-full-width">
+              <mat-label>Estado</mat-label>
+              <input matInput placeholder="Ex. Goiás">
+            </mat-form-field></td>
+          <td><mat-form-field class="example-full-width">
+              <mat-label>Código Postal</mat-label>
+              <input matInput #postalCode maxlength="5"
+                placeholder="Ex.74000-000">
+              <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+            </mat-form-field></td>
+        </tr></table>
+    </form>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary">Atualizar Usuário</button>
+  </mat-card-actions>
+</mat-card>
+
+<br />
+<br />
+<br />

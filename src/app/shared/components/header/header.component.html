@@ -1,0 +1,58 @@
+<div class="home">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <mat-icon>menu</mat-icon>
+
+      <span class="spacer">LOGÍSTICA</span>
+
+      <!-- <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+      <ul fxLayout="row" fxLayout="20px">
+        <li> -->
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="notifications"
+        matTooltip="Notificação" aria-label="">
+        <mat-icon matBadge="4" matBadgeColor="primary">notifications</mat-icon>
+      </button>
+      <mat-menu #notifications="matMenu">
+        <button mat-menu-item>
+          <span>Notifcação 1</span>
+        </button>
+        <button mat-menu-item>
+          <span>Notifcação 2</span>
+        </button>
+        <button mat-menu-item>
+          <span>Notifcação 3</span>
+        </button>
+        <button mat-menu-item>
+          <span> Outras Notifcações</span>
+        </button>
+      </mat-menu>
+      <!-- </li>
+        <li> -->
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="list"
+        matTooltip="Conta" aria-label="">
+        <mat-icon>view_list</mat-icon>
+      </button>
+      <mat-menu #list="matMenu">
+        <button mat-menu-item>
+          <mat-icon>message</mat-icon>
+          <span>Mensagens</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>help_outline</mat-icon>
+          <span>Ajuda</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          <span>Configuração</span>
+        </button>
+      </mat-menu>
+      <!-- </li>
+      </ul>
+    </div> -->
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>

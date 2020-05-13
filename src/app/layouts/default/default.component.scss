@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-drsidenavawer {
+  width: 250px;
+}
+
+mat-sidenav-container {
+  height: 100%;
+}
+
+mat-sidenav-content {
+  padding: 20px;
+}
+
+.container {
+  height: calc(100% - 64px);
+}
